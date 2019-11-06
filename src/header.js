@@ -11,7 +11,7 @@ constructor(props) {
          
 }
     render(){
-        return(<div class="header"><img src={emojmage} class="img-emo"/>Emoji Search<img src={emojjmage} class="img-emo"/></div>)
+        return(<div class="header" ><img src={emojmage} class="img-emo"/>Emoji Search<img src={emojjmage} class="img-emo"/></div>)
     }
 }
 

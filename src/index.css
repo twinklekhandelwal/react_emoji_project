@@ -14,25 +14,31 @@ code {
 
 .header{
   text-align: center;
-  padding: 55px;
+  /* padding-left: 55px; */
   
   font-size:30px;
   color: #333;
   
 }
-.img-emo{
+.header .img-emo {
+  
+  padding:0 14px;
   width:2%;
   height: 40px;
   position: relative;
   top:10px;
   
-}
+} 
+
+
+
 .searchinput{
   width:95%;
   height: 40px;
   margin-left:20px;
   border-radius: 4px;
   font-size:20px;
+  margin-top: 40px;
 
 }
 .input{
@@ -40,3 +46,17 @@ code {
   height:40px;
 
 }
+.shareholder{
+  border:1px solid #ccc;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px;
+  
+}
+.shareholder:hover{
+  background-color: #eee;
+}
+
+
+
+
