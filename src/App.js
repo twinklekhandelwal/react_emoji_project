@@ -1,10 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Header  from './header';
 import Input  from './input';
 import typeemo  from './input';
 import Emoji  from './emoji';
+import Result  from './result';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
     <Input/>
     <typeemo/>
     <Emoji/>
+    <Result/>
     </div>
       
   );

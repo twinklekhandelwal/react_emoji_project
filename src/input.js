@@ -1,32 +1,28 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './index.css';
+import Headers  from './emoji';
+class inputlist extends Component {
+	constructor(props) {
+		super(props);
 
-class inputlist extends Component{
-constructor(props) {
-    super(props)
+		this.state = { a: 'twinkle',
+	 };
+	}
+	handleInputChange = () => {
+		this.setState({
+			query: this.search.value,
+		});
+	};
+	
 
-    this.state = {"a":"twinkle"}
-         
-}
-handleInputChange = () => {
-  this.setState({
-    query: this.search.value
-  });
-};
-
-
-render() {
-  return (
-    <form>
-      <input
-        ref={input => (this.search = input)}
-        onChange={this.handleInputChange}
-      class="searchinput"/>
-      <p />
-     </form>
-
-);
-  }
+	render() {
+		return (
+			<form>
+				<input ref={input => (this.search = input)} onChange={this.handleInputChange} class="searchinput" />
+				<p />
+			</form>
+		);
+	}
 }
 
 //     render(){
