@@ -5,7 +5,7 @@ import Header  from './header';
 import Input  from './input';
 import typeemo  from './input';
 import Emoji  from './emoji';
-import Result  from './result';
+// import Result  from './result';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Input/>
     <typeemo/>
     <Emoji/>
-    <Result/>
+    {/* <Result/> */}
     </div>
       
   );

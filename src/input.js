@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import './index.css';
-import Headers  from './emoji';
+// import Headers  from './emoji';
+
 class inputlist extends Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { a: 'twinkle',
-	 };
+		this.state = { query: '' };
+		this.handleInputChange = this.handleInputChange.bind(this);
 	}
-	handleInputChange = () => {
+	handleInputChange(event) {
 		this.setState({
-			query: this.search.value,
+			query: event.target.value,
 		});
-	};
-	
+	}
 
 	render() {
 		return (
 			<form>
-				<input ref={input => (this.search = input)} onChange={this.handleInputChange} class="searchinput" />
+				<input onChange={this.handleInputChange} className="searchinput" />
 				<p />
 			</form>
 		);

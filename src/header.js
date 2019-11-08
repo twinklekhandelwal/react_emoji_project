@@ -9,21 +9,21 @@ class heading extends Component {
 
 		this.state = { a: 'twinkle' };
 	}
-	copyToClipboard = (e) => {
-		this.input.select();
-		document.execCommand('copy');
-		// This is just personal preference.
-		// I prefer to not show the the whole text area selected.
-		e.target.focus();
-		this.setState({ copySuccess: 'Copied!' });
-	  };
+	// copyToClipboard = (e) => {
+	// 	this.input.select();
+	// 	document.execCommand('copy');
+	// 	// This is just personal preference.
+	// 	// I prefer to not show the the whole text area selected.
+	// 	e.target.focus();
+	// 	this.setState({ copySuccess: 'Copied!' });
+	//   };
 	
 	render() {
 		return (
 			<div class="header">
-				<img src={emojmage} class="img-emo" />
+				<img src={emojmage} className="img-emo" />
 				Emoji Search
-				<img src={emojjmage} class="img-emo" />
+				<img src={emojjmage} className="img-emo" />
 			</div>
 		);
 	}

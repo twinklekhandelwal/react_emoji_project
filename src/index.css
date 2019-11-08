@@ -58,10 +58,14 @@ code {
 .shareholder:hover{
   background-color: #eee;
 }
-.copy{
-   /* float:right;  */
-  /* padding-right: 20px; */
-}
 
+.copy{
+  float:right;
+  display:none;
+  margin-top: -40px;
+}
+.shareholder:hover .copy{
+  display:block;
+}
 
 
