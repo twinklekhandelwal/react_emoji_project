@@ -33,16 +33,16 @@ code {
 
 
 .searchinput{
-  width:95%;
+  width:98%;
   height: 40px;
   margin-left:20px;
   border-radius: 4px;
   font-size:20px;
-  margin-top: 40px;
+  margin-top: 20px;
 
 }
 .input{
-  width:98%;
+  width:99%;
   height:40px;
 
 }
@@ -50,7 +50,8 @@ code {
   border:1px solid #ccc;
   font-size: 20px;
   cursor: pointer;
-  padding: 15px;
+  padding:1px;
+  /* margin-top: 10px; */
   
   
   
@@ -66,6 +67,28 @@ code {
 }
 .shareholder:hover .copy{
   display:block;
+}
+.link{
+
+  
+  background-color: #333;
+  float: right;
+  margin-top:-80px;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  padding-top:5px;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari 3-8 */
+  transform: rotate(35deg);
+}
+.top{
+  margin-top: 10px;
+}
+a{
+  color:white;
+  text-decoration: none;
+  
 }
 
 
