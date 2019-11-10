@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-// import Headers  from './emoji';
+
 import json from './emoji.json';
 
 function search_emoji(query) {
@@ -23,16 +23,11 @@ class inputlist extends Component {
 			query: event.target.value,
 		});
 	}
-	// var i;
 
-	// for(i=0;i<json.length;i++){
-	copyToClipboard = symbols => {
-		// console.log('text', text)
-		// this.setState({ copySuccess: json.symbol });
-
+	copyToClipboard = symbol => {
 		var textField = document.createElement('textarea');
-		textField.innerText = symbols;
-		console.log(textField.innerText);
+		textField.innerText = symbol;
+
 		document.body.appendChild(textField);
 		textField.select();
 		document.execCommand('copy');
@@ -48,15 +43,15 @@ class inputlist extends Component {
 				<div class="link">
 					<a href="https://github.com/twinklekhandelwal/react_emoji_project.git">Fork me on Github</a>
 				</div>
-				<div class="top">
-					{this.state.jsondata.filter(search_emoji(this.state.query)).map(shareholder => (
-						<div className="shareholder">
+				<div class="main-containt">
+					{this.state.jsondata.filter(search_emoji(this.state.query)).map(Emoji => (
+						<div className="emojis-containt">
 							<p class="symbol">
-								{shareholder.symbol}
-								{shareholder.title}
+								{Emoji.symbol}
+								{Emoji.title}
 							</p>
 
-							<p className="copy" onClick={() => this.copyToClipboard(shareholder.symbol)}>
+							<p className="copy" onClick={() => this.copyToClipboard(Emoji.symbol)}>
 								Click to copy emoji
 							</p>
 						</div>
