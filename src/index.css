@@ -24,7 +24,7 @@ code {
   
   padding:0 14px;
   width:2%;
-  height: 40px;
+  height: 35px;
   position: relative;
   top:10px;
   
@@ -48,13 +48,16 @@ code {
 }
 .shareholder{
   border:1px solid #ccc;
-  font-size: 20px;
+  ;
   cursor: pointer;
-  padding:1px;
+  padding-left:10px;
   /* margin-top: 10px; */
   
   
   
+}
+.symbol{
+  font-size: 21px;
 }
 .shareholder:hover{
   background-color: #eee;
@@ -64,6 +67,7 @@ code {
   float:right;
   display:none;
   margin-top: -40px;
+  /* color:#ccc; */
 }
 .shareholder:hover .copy{
   display:block;
@@ -71,7 +75,7 @@ code {
 .link{
 
   
-  background-color: #333;
+  background-color:#333;
   float: right;
   margin-top:-80px;
   width: 200px;
@@ -79,7 +83,7 @@ code {
   text-align: center;
   padding-top:5px;
   -ms-transform: rotate(20deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Safari 3-8 */
+  -webkit-transform: rotate(20deg); /* Safari 3-8 */
   transform: rotate(35deg);
 }
 .top{

@@ -17,7 +17,7 @@ class heading extends Component {
 	// 	e.target.focus();
 	// 	this.setState({ copySuccess: 'Copied!' });
 	//   };
-	
+
 	render() {
 		return (
 			<div class="header">

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './index.css';
 // import Headers  from './emoji';
 import json from './emoji.json';
-console.log(json);
+
 function search_emoji(query) {
 	return function(x) {
-		return  (x.keywords.toLowerCase().includes(query.toLowerCase())|| x.title.toLowerCase().includes(query.toLowerCase()));
-			
-			
-		
-	}
+		return (
+			x.keywords.toLowerCase().includes(query.toLowerCase()) ||
+			x.title.toLowerCase().includes(query.toLowerCase())
+		);
+	};
 }
 class inputlist extends Component {
 	constructor(props) {
@@ -23,48 +23,44 @@ class inputlist extends Component {
 			query: event.target.value,
 		});
 	}
-	
-	copyToClipboard = text => {
+	// var i;
+
+	// for(i=0;i<json.length;i++){
+	copyToClipboard = symbols => {
 		// console.log('text', text)
 		// this.setState({ copySuccess: json.symbol });
 
 		var textField = document.createElement('textarea');
-		textField.innerText = json;
-		console.log(textField.innerText)
+		textField.innerText = symbols;
+		console.log(textField.innerText);
 		document.body.appendChild(textField);
 		textField.select();
 		document.execCommand('copy');
 		textField.remove();
 	};
-	
 
 	render() {
-		
-
 		return (
 			<div>
 				<form>
 					<input onChange={this.handleInputChange} className="searchinput" />
-
-					
 				</form>
 				<div class="link">
-				<a href="https://github.com/twinklekhandelwal/react_emoji_project.git">Fork me on Github</a>
-					</div>
-					<div class="top">
-				{this.state.jsondata.filter(search_emoji(this.state.query)).map(shareholder => (
-					<div className="shareholder">
-						<p>
-							{shareholder.symbol}
-							{shareholder.title}
-						</p>
+					<a href="https://github.com/twinklekhandelwal/react_emoji_project.git">Fork me on Github</a>
+				</div>
+				<div class="top">
+					{this.state.jsondata.filter(search_emoji(this.state.query)).map(shareholder => (
+						<div className="shareholder">
+							<p class="symbol">
+								{shareholder.symbol}
+								{shareholder.title}
+							</p>
 
-						<p className="copy" onClick={this.copyToClipboard}>
-							Click to copy emoji
-						</p>
-						
-					</div>
-				))}
+							<p className="copy" onClick={() => this.copyToClipboard(shareholder.symbol)}>
+								Click to copy emoji
+							</p>
+						</div>
+					))}
 				</div>
 			</div>
 		);
