@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './index.css';
 
-import json from './emoji.json';
+// import json from './emoji.json';
 
-function search_emoji(query) {
+function searchEmoji(query) {
 	return function(x) {
 		return (
 			x.keywords.toLowerCase().includes(query.toLowerCase()) ||
@@ -11,14 +11,14 @@ function search_emoji(query) {
 		);
 	};
 }
-class inputlist extends Component {
+class InputList extends Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { jsondata: json, query: '', copySuccess: json.symbol };
-		this.handleInputChange = this.handleInputChange.bind(this);
+		this.state = { jsondata: props.emojiJson, query: '', copySuccess: props.emojiJson.symbol };
+		// this.handleInputChange = this.handleInputChange.bind(this);
 	}
-	handleInputChange(event) {
+	handleInputChange=(event)=> {
 		this.setState({
 			query: event.target.value,
 		});
@@ -44,7 +44,7 @@ class inputlist extends Component {
 					<a href="https://github.com/twinklekhandelwal/react_emoji_project.git">Fork me on Github</a>
 				</div>
 				<div class="main-containt">
-					{this.state.jsondata.filter(search_emoji(this.state.query)).map(Emoji => (
+					{this.state.jsondata.filter(searchEmoji(this.state.query)).slice(0,20).map(Emoji => (
 						<div className="emojis-containt">
 							<p class="symbol">
 								{Emoji.symbol}
@@ -62,4 +62,4 @@ class inputlist extends Component {
 	}
 }
 
-export default inputlist;
+export default InputList;
