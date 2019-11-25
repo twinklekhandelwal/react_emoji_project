@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 
-// import json from './emoji.json';
+
 
 function searchEmoji(query) {
 	return function(x) {
@@ -16,7 +16,7 @@ class InputList extends Component {
 		super(props);
 
 		this.state = { jsondata: props.emojiJson, query: '', copySuccess: props.emojiJson.symbol };
-		// this.handleInputChange = this.handleInputChange.bind(this);
+		
 	}
 	handleInputChange=(event)=> {
 		this.setState({
