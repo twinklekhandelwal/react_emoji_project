@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.3ee79252.chunk.css",
-    "main.js": "/my-app/static/js/main.27598d4d.chunk.js",
-    "main.js.map": "/my-app/static/js/main.27598d4d.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.87b9f2eb.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.87b9f2eb.js.map",
-    "static/js/2.85feaa2e.chunk.js": "/my-app/static/js/2.85feaa2e.chunk.js",
-    "static/js/2.85feaa2e.chunk.js.map": "/my-app/static/js/2.85feaa2e.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "precache-manifest.e3e085f4529a1612f2277a031febc8e6.js": "/my-app/precache-manifest.e3e085f4529a1612f2277a031febc8e6.js",
-    "service-worker.js": "/my-app/service-worker.js",
-    "static/css/main.3ee79252.chunk.css.map": "/my-app/static/css/main.3ee79252.chunk.css.map"
+    "main.css": "/react_emoji_project/static/css/main.3ee79252.chunk.css",
+    "main.js": "/react_emoji_project/static/js/main.15fc3dc2.chunk.js",
+    "main.js.map": "/react_emoji_project/static/js/main.15fc3dc2.chunk.js.map",
+    "runtime-main.js": "/react_emoji_project/static/js/runtime-main.3570d892.js",
+    "runtime-main.js.map": "/react_emoji_project/static/js/runtime-main.3570d892.js.map",
+    "static/js/2.85feaa2e.chunk.js": "/react_emoji_project/static/js/2.85feaa2e.chunk.js",
+    "static/js/2.85feaa2e.chunk.js.map": "/react_emoji_project/static/js/2.85feaa2e.chunk.js.map",
+    "index.html": "/react_emoji_project/index.html",
+    "precache-manifest.2d47e24a938a8b87c90ccb69076d0300.js": "/react_emoji_project/precache-manifest.2d47e24a938a8b87c90ccb69076d0300.js",
+    "service-worker.js": "/react_emoji_project/service-worker.js",
+    "static/css/main.3ee79252.chunk.css.map": "/react_emoji_project/static/css/main.3ee79252.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.87b9f2eb.js",
+    "static/js/runtime-main.3570d892.js",
     "static/js/2.85feaa2e.chunk.js",
     "static/css/main.3ee79252.chunk.css",
-    "static/js/main.27598d4d.chunk.js"
+    "static/js/main.15fc3dc2.chunk.js"
   ]
 }
